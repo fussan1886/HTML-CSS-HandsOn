@@ -11,10 +11,10 @@ li {
   list-style: none;
 }
 
-dd {
+/* dd {
   margin: 0;
   line-height: 1.6;
-}
+} */
 
 a {
   text-decoration: none;
@@ -123,7 +123,7 @@ section h2 {
 
 .article-content {
   display: grid;
-  width: 1280px;
+  /* width: 1280px; */
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px 16px;
 }
@@ -131,10 +131,7 @@ section h2 {
 .article-content img {
   width: 400px;
   height: 200px;
-}
-
-article {
-  width: 400px;
+  object-fit: cover;
 }
 
 article h3 {
