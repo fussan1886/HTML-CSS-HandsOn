@@ -11,6 +11,11 @@ li {
   list-style: none;
 }
 
+dd {
+  margin: 0;
+  line-height: 1.6;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -24,6 +29,7 @@ a {
   padding: 0 40px;
   max-width: 1280px;
   margin: 0 auto;
+  padding-top: 24px;
 }
 
 /*-------------------------------------------
@@ -38,31 +44,112 @@ a {
 /*-------------------------------------------
   これより下にコードを追加してください。
   -------------------------------------------*/
-/*-------------------------------------------
-  ヘッダー
-  -------------------------------------------*/
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
 
-/*-------------------------------------------
-  メインビジュアル
-  -------------------------------------------*/
+.header-logo img {
+  height: 25px;
+  object-fit: cover;
+  display: block;
+}
 
+.header-list ul {
+  display: flex;
+}
 
-/*-------------------------------------------
-  セクション 共通部分
-  -------------------------------------------*/
+.header-list li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 
+.header-list li:first-child {
+  margin-right: 24px;
+}
 
-/* -------------------------------------------
-  プロフィール
-  -------------------------------------------*/
+.top-image {
+  display: flex;
+}
+.top-image img {
+  width: 100%;
+  height: 640px;
+  border-radius: 16px;
+  text-align: center;
+  object-fit: cover;
+  display: block;
+}
 
+section {
+  /* display: flex; */
+  align-items: center;
+}
 
-/* -------------------------------------------
-  記事
-  -------------------------------------------*/
+.profile-content {
+  display: flex;
+  justify-content: center;
+}
 
+.profile-content img {
+  margin-right: 40px;
+  border-radius: 50%;
+  height: 200px;
+}
+section h2 {
+  margin: 0 auto 40px;
+  border-bottom: 1px solid black;
+  display: block;
+  width: fit-content;
+}
 
-/*-------------------------------------------
-  フッター
-  -------------------------------------------*/
+.profile-info h3 {
+  margin-bottom: 24px;
+}
+
+.item {
+  display: flex;
+}
+
+.profile-ifo {
+  text-align: left;
+}
+.profile-info dt::after {
+  content: ":";
+  margin: 0 8px;
+}
+
+.article-content {
+  display: grid;
+  width: 1280px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 16px;
+}
+
+.article-content img {
+  width: 400px;
+  height: 200px;
+}
+
+article {
+  width: 400px;
+}
+
+article h3 {
+  margin: 8px 0;
+}
+
+article p {
+  margin-bottom: 8px;
+}
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: small;
+}

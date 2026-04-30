@@ -1,31 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>自己紹介</title>
+    <meta name="description" content="自己紹介サイトです。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSSファイルの適用 -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>自己紹介</title>
-  <meta name="description" content="自己紹介サイトです。" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- CSSファイルの適用 -->
-  
-</head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="header-logo">
+          <img src="./img/logo.png" alt="header-logo" />
+        </div>
+        <nav class="header-list">
+          <ul>
+            <li>Profile</li>
+            <li>Articles</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-content">
+        <!-- 記事 セクション -->
+        <div class="top-image">
+          <img src="./img/main_visual.jpg" alt="トップ画像" />
+        </div>
 
-<body>
-  <div class="page-wrapper">
-    <!-- ヘッダー -->
+        <section class="profile">
+          <h2>Profile</h2>
+          <div class="profile-content">
+            <img src="./img/profile.png" alt="プロフィール画像" />
+            <div class="profile-info">
+              <h3>TARO RARETECH</h3>
 
-    <main class="main-content">
-      <!-- メインビジュアル -->
+              <dl class="profile-list">
+                <div class="item">
+                  <dt>出身</dt>
+                  <dd>東京都</dd>
+                </div>
+                <div class="item">
+                  <dt>趣味</dt>
+                  <dd>
+                    アプリ開発, 散歩(公園を中心に都内を歩きまわっています)
+                  </dd>
+                </div>
+                <div class="item">
+                  <dt>技術</dt>
+                  <dd>Python, Django, JavaScript, React, AWS, GCP</dd>
+                </div>
+                <div class="item">
+                  <dt>主な仕事</dt>
+                  <dd>マネジメント, バックエンド開発</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
 
-      <!-- プロフィール セクション -->
+        <section class="articles">
+          <h2>Articles</h2>
+          <div class="article-content">
+            <article>
+              <img src="./img/article.jpg" alt="コンテンツ画像" />
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+              </p>
+            </article>
+            <article>
+              <img src="./img/article.jpg" alt="コンテンツ画像" />
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+              </p>
+            </article>
+            <article>
+              <img src="./img/article.jpg" alt="コンテンツ画像" />
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+              </p>
+            </article>
+            <article>
+              <img src="./img/article.jpg" alt="コンテンツ画像" />
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
 
-      <!-- 記事 セクション -->
-
-    </main>
-
-    <!-- フッター -->
-
-  </div>
-</body>
-
+      <!-- フッター -->
+      <footer>
+        <p>&copy; 2024 Profile</p>
+      </footer>
+    </div>
+  </body>
 </html>
